@@ -94,13 +94,11 @@ html {
 
 #slider {
     position: relative;
-    background: url('/W3_BAND/assets/img/slider1.jpg') top center / cover no-repeat ;
+    background: url('../img/slider1.jpg') top center / cover no-repeat ;
     margin-top:46px ;
     padding-top: 50%;
 
 }
-
-
 
 #slider .text-slider {
    position: absolute;
@@ -225,6 +223,14 @@ html {
     border-radius: 50%;
 }
 
+.buy-ticket-item {
+    float: left;
+}
+
+.aboutbuyticket {
+    background-color : #fff;
+    color : black;
+}
 
 #footer {
 
