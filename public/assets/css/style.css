@@ -15,6 +15,12 @@ html {
     color: #fff !important;
 }
 
+.clear {
+    clear: both;
+    display: block;
+    center: "";
+}
+
 
 #header {
   position: fixed;
@@ -223,8 +229,20 @@ html {
     border-radius: 50%;
 }
 
+.buy-ticket-list {
+    padding: 0 -8px;
+} 
+
 .buy-ticket-item {
     float: left;
+    width: calc(100% / 3);
+    display: block;
+    padding: 0 8px;
+}
+
+.img-buy-item {
+    width:100%;
+   
 }
 
 .aboutbuyticket {
