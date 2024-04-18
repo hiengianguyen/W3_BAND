@@ -110,7 +110,7 @@ html {
 
 #slider {
   position: relative;
-  background: url("../img/slider1.jpg") top center / cover no-repeat;
+  background: url("../img/tphochiminh.webp") top center / cover no-repeat;
   margin-top: 46px;
   padding-top: 50%;
 }
@@ -126,12 +126,14 @@ html {
 #slider .about-slider {
   color: #fff;
   font-weight: 500;
+  text-shadow: 2px 2px 10px #ccc;
 }
 
 #slider .about-sud-slider {
   color: #fff;
   margin-top: 25px;
   font-weight: 700;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
 #content {
@@ -247,6 +249,7 @@ html {
   padding: 11px 22px;
   text-decoration: none;
   display: inline-block;
+  border: 0;
 }
 
 .aboutbuyticket .buy-ticket:hover {
@@ -294,9 +297,9 @@ html {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.4);
-  display: flex;
   align-items: center;
   justify-content: center;
+  display: none;
 }
 
 .modal .modal-con {
@@ -304,6 +307,8 @@ html {
   width: 900px;
   min-height: 200px;
   position: relative;
+  max-width: calc(100%-32px);
+  animation: modalFadeIn ease 0.5s;
 }
 
 .modal-con .header-modal {
@@ -382,4 +387,19 @@ label.modal-label {
 
 .footer-modal .help-modal-ft {
   color: #009688;
+}
+
+.modal.open {
+  display: flex;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0.4;
+    transform: translateY(-300px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
