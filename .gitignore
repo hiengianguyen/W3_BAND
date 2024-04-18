@@ -66,4 +66,6 @@ node_modules/
 .env
 
 # font folder
-assets/font
+./public/assets/font
+(public)
+
