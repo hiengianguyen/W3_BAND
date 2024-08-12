@@ -7,7 +7,7 @@
     <link
       rel="icon"
       type="image/x-icon"
-      href="https://image.shutterstock.com/image-vector/music-band-classic-logo-260nw-1430093183.jpg"
+      href="https://static.thenounproject.com/png/4666048-200.png"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link
@@ -283,30 +283,8 @@
       </div>
     </div>
 
-    <script>
-      const buyBtns = document.querySelectorAll(".js-buy-tickets");
-      const modal = document.querySelector(".js-modal");
-      const modalClose = document.querySelector(".js-modal-close");
-      const modalContainer = document.querySelector(".js-modal-container");
-
-      function showmodal() {
-        modal.classList.add("open");
-      }
-      function hidemodal() {
-        modal.classList.remove("open");
-      }
-
-      for (const buyBtn of buyBtns) {
-        buyBtn.addEventListener("click", showmodal);
-      }
-
-      modalClose.addEventListener("click", hidemodal);
-
-      modal.addEventListener("click", hidemodal);
-
-      modalContainer.addEventListener("click", function (event) {
-        event.stopPropagation();
-      });
+    <script src="./index.js">
+      
     </script>
   </body>
 </html>
