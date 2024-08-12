@@ -68,6 +68,7 @@ html {
   right: 0;
   left: 0;
   z-index: 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1.4);
 }
 
 #header .search-btn {
@@ -259,6 +260,10 @@ html {
   padding: 16px;
 }
 
+.buy-ticket-item .img-buy-item {
+  height: 182.84px;
+}
+
 .buy-ticket-item .img-buy-item:hover {
   opacity: 0.6;
 }
@@ -296,8 +301,8 @@ html {
   float: right;
   text-align: center;
   background-color: #000;
-  width: 24px;
-  border-radius: 50%;
+  width: 30px;
+  border-radius: 40%;
 }
 
 .buy-ticket-list {
